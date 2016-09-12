@@ -6,6 +6,17 @@
 public class Inheritance {
   
   public static void main (String [] args) {
-
+    int[] stats = {5,6,7};
+    int[] location = {3,4};
+    int[] spawnLocation = {1,2};
+    Character dude = new Character(stats, location, spawnLocation);
+    
+    System.out.println(dude.stats);
+    System.out.println(dude.location);
+    System.out.println(dude.spawnLocation());
+    
+    System.out.println(dude.getStats());
+    System.out.println(dude.getLocation());
+    System.out.println(dude.getSpawnLocation());
   }
 }
