@@ -58,22 +58,22 @@ public class Character {
   // Move Methods
   public boolean moveUp() {
     this.location[1] += this.stats[3];
-    return True ;
+    return true;
   }
   
   public boolean moveDown() {
     this.location[1] -= this.stats[3];
-    return(True);
+    return true;
   }
   
   public boolean moveRight() {
     this.location[0] += this.stats[3];
-    return(True);
+    return true;
   }
   
   public boolean moveLeft() {
     this.location[0] -= this.stats[3];
-    return(True);
+    return true;
   }
   
   
