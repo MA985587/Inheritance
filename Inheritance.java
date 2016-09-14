@@ -9,7 +9,7 @@ public class Inheritance {
     int[] stats = {5,6,7,10};
     int[] location = {40,41};
     int[] spawnLocation = {50,51};
-    Character dude = new Character(stats, location, spawnLocation);
+    Player dude = new Player(stats, location, spawnLocation, "Blahblah");
     // tests that Constructor initializes stats properly
     System.out.print("Stats: ");
     for (int i = 0; i < dude.getStats().length; i++) {
