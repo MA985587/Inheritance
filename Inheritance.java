@@ -10,6 +10,7 @@ public class Inheritance {
     int[] location = {40,41};
     int[] spawnLocation = {50,51};
     Player dude = new Player(stats, location, spawnLocation, "Blahblah");
+    
     // tests that Constructor initializes stats properly
     System.out.print("Stats: ");
     for (int i = 0; i < dude.getStats().length; i++) {
@@ -72,5 +73,39 @@ public class Inheritance {
        System.out.print(dude.getLocation()[i] + " "); 
     }
     System.out.println("");
+    
+    // testing setters
+    System.out.println("testing Setters:");
+    int[] stats1 = {20, 21, 22, 23};
+    dude.setStats(stats1);
+    int[] location1 = {0, 1};
+    dude.setLocation(location1);
+    int[] spawnLocation1 = {99, 100};
+    dude.setSpawnLocation(spawnLocation1);
+    dude.setName("somethingDifferent");
+    // tests that setters set stats properly
+    System.out.print("Stats: ");
+    for (int i = 0; i < dude.getStats().length; i++) {
+       System.out.print(dude.getStats()[i] + " "); 
+    }
+    System.out.println("");
+    
+    // tests that Constructor initializes location properly
+    System.out.print("Location: ");
+    for (int i = 0; i < dude.getLocation().length; i++) {
+       System.out.print(dude.getLocation()[i] + " "); 
+    }
+    System.out.println("");
+
+    // tests that Constructor initializes spawn location properly
+    System.out.print("Spawn Location: ");
+    for (int i = 0; i < dude.getSpawnLocation().length; i++) {
+       System.out.print(dude.getSpawnLocation()[i] + " "); 
+    }
+    System.out.println("");
+    
+    // tests that Constructor initializes name properly
+    System.out.print("name: ");
+    System.out.println(dude.getName()); 
   }
 }
