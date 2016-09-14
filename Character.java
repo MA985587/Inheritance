@@ -1,4 +1,4 @@
-//import java.util.Math;
+import java.util.Random;
 
 public class Character {
   // Properties:
@@ -16,14 +16,15 @@ public class Character {
     this.spawnLocation = spawnLocation;
   }
   
-  /*public Character(int[] spawnLocation) {
-    this.spawnLocation = spawnLocation;
-    this.stats[0] = Math.random();
-      this.stats[1] = Math.random();
-      this.stats[2] = 
-      this.location[0] =
-      this.location[1] =
-  }*/
+  public Character(int[] spawnLocation) {
+    Random rand = new Random();  // generates random integers
+    this.spawnLocation = spawnLocation;  // starting position
+    this.stats[0] = rn.nextInt(500);  // stats: HP
+    this.stats[0] = rn.nextInt(100);  // stats: strength
+    this.stats[0] = rn.nextInt(100);  // stats: mana
+    this.location[0] = spawnLocation[0];  // location: x coordinate
+    this.location[1] = spawnLocation[1];  // location: y coordinate
+  }
   
   // Methods:
 
