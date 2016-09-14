@@ -31,6 +31,11 @@ public class Inheritance {
     }
     System.out.println("");
     
+    // tests that Constructor initializes name properly
+    System.out.print("name: ");
+    System.out.println(dude.getName()); 
+
+    
     // movement test
     dude.moveUp(); // expect y axis to be 51
     System.out.println("Test moveUp()");
