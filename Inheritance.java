@@ -7,8 +7,8 @@ public class Inheritance {
   
   public static void main (String [] args) {
     int[] stats = {5,6,7};
-    int[] location = {3,4};
-    int[] spawnLocation = {1,2};
+    int[] location = {50,50};
+    int[] spawnLocation = {50,50};
     Character dude = new Character(stats, location, spawnLocation);
     
     System.out.println(dude.stats);
