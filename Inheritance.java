@@ -6,7 +6,7 @@
 public class Inheritance {
   
   public static void main (String [] args) {
-    int[] stats = {5,6,7};
+    int[] stats = {5,6,7,10};
     int[] location = {40,41};
     int[] spawnLocation = {50,51};
     Character dude = new Character(stats, location, spawnLocation);
@@ -31,5 +31,41 @@ public class Inheritance {
     }
     System.out.println("");
     
+    // movement test
+    dude.moveUp(); // expect y axis to be 51
+    System.out.println("Test moveUp()");
+    // tests that Constructor initializes location properly
+    System.out.print("Location: ");
+    for (int i = 0; i < dude.getLocation().length; i++) {
+       System.out.print(dude.getLocation()[i] + " "); 
+    }
+    System.out.println("");
+    
+    dude.moveDown(); // expect y axis to be 41
+    System.out.println("Test moveDown()");
+    // tests that Constructor initializes location properly
+    System.out.print("Location: ");
+    for (int i = 0; i < dude.getLocation().length; i++) {
+       System.out.print(dude.getLocation()[i] + " "); 
+    }
+    System.out.println("");
+    
+    dude.moveLeft(); // expect x axis to be 30
+    System.out.println("Test moveLeft()");
+    // tests that Constructor initializes location properly
+    System.out.print("Location: ");
+    for (int i = 0; i < dude.getLocation().length; i++) {
+       System.out.print(dude.getLocation()[i] + " "); 
+    }
+    System.out.println("");
+   
+    dude.moveRight(); // expect x axis to be 40
+    System.out.println("Test moveRight()");
+    // tests that Constructor initializes location properly
+    System.out.print("Location: ");
+    for (int i = 0; i < dude.getLocation().length; i++) {
+       System.out.print(dude.getLocation()[i] + " "); 
+    }
+    System.out.println("");
   }
 }
